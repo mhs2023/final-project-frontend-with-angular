@@ -25,4 +25,12 @@ export class RoomAPIService {
   addData(room: rooms) {
     return this.http.post(this.URL, room)
   }
+
+  getAll(){
+    return this.http.get(this.URL);
+  }
+
+  deleteById(id: any) {
+    return this.http.delete(this.URL+ "/" + id);
+  }
 }

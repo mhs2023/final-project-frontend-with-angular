@@ -4,6 +4,7 @@ import { RoomsComponent } from './components/rooms/rooms.component';
 import { HomeComponent } from './components/home/home.component';
 import { CreateRoomComponent } from './components/create-room/create-room.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { RoomListComponent } from './components/room-list/room-list.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'createroom', component: CreateRoomComponent},
   {path: 'signUp', component: SignUpComponent},
+  {path: 'roomList', component: RoomListComponent},
 
 ];
 

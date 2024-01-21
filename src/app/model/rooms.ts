@@ -1,4 +1,5 @@
 export interface rooms {
+    id: any;
     Room_Code: string;
     Accommodations_Category: string;
     RoomSize: string;

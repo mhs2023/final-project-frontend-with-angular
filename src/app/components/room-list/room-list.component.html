@@ -1,0 +1,43 @@
+<div class="container mt-3">
+    <table class="table table-bordered table-light table-striped">
+
+        <thead class = "table-dark">
+            <tr>
+                <th scope="col">Room Code</th>
+                <th scope="col">Accommodations Category</th>
+                <th scope="col">Room Size</th>
+                <th scope="col">Guest Size</th>
+                <th scope="col">AC</th>
+                <th scope="col">Room Amenities</th>
+                <th scope="col">Wifi Availability</th>
+                <th scope="col">Single Bed</th>
+                <th scope="col">Double Bed</th>
+                <th scope="col">Sleeping Bag</th>
+                <th scope="col">Action</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let room of roomList">
+                <th>{{room.Room_Code}}</th>
+                <td>{{room.Accommodations_Category}}</td>
+                <td>{{room.RoomSize}}</td>
+                <td>{{room.GuestSize}}</td>
+                <th>{{room.AC}}</th>
+                <td>{{room.Room_Amenities}}</td>
+                <td>{{room.WifiAvailability}}</td>
+                <td>{{room.Single_Bed}}</td>
+                <th>{{room.Double_Bed}}</th>
+                <td>{{room.Sleeping_Bag}}</td>
+                <td>
+                    <a class="btn btn-primary" style="margin-bottom: 5px;" [routerLink]="['/edit', room.id]">Edit</a>
+          
+                    <button type="button" class="btn btn-danger" (click)="delete(room.id)">Delete</button>
+                      
+                  </td>
+            </tr>
+           
+        </tbody>
+    </table>
+<div style="margin-top: 500px;"></div>
+</div>

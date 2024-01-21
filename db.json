@@ -44,6 +44,19 @@
       "Single_Bed": "Single_Bed-none",
       "Double_Bed": "Double_Bed-none",
       "GuestSize": "GuestSize-1"
+    },
+    {
+      "id": "35c2",
+      "Room_Code": "BS01",
+      "Accommodations_Category": "BusinessSuit",
+      "RoomSize": "1200",
+      "WifiAvailability": "Wifi-available",
+      "AC": "AC-available",
+      "Room_Amenities": "Room_Amenities-available",
+      "Sleeping_Bag": "Sleeping_Bag-not-available",
+      "Single_Bed": "Single_Bed-none",
+      "Double_Bed": "Double_Bed-2",
+      "GuestSize": "GuestSize-4"
     }
   ]
 }
