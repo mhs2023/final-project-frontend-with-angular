@@ -1,0 +1,44 @@
+<div class="container mt-3">
+    <h1 style="text-align: center;">Sign Up</h1>
+    <form class="mt-3" [formGroup]="signUpForm" (submit)="CreateAccout()">
+        <div class="row mb-3">
+            <div class="col">
+                <label for="First_name" class="form-label">First Name</label>
+                <input type="text" class="form-control" aria-label="First_name" formControlName="firstName">
+            </div>
+            <div class="col">
+                <label for="Last_name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" aria-label="Last_name" formControlName="lastName">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="inputState" class="form-label">Gender</label>
+                <select id="inputState" class="form-select" formControlName="gender">
+                    <option selected>Choose...</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="thirdGender">Prefer not to disclose</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="InputPhoneNumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="InputPhoneNumber" formControlName="phoneNumber">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="InputEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" formControlName="email">
+
+        </div>
+
+        <div class="mb-3">
+            <label for="InputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="InputPassword" formControlName="password">
+        </div>
+        <div style="text-align: right;">
+            <button type="submit" class="btn btn-primary" >Create Account</button>
+        </div>
+        <div style="margin-top: 180px;"></div>
+    </form>
+</div>

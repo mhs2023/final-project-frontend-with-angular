@@ -8,6 +8,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CreateRoomComponent } from './components/create-room/create-room.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { CreateRoomComponent } from './components/create-room/create-room.compon
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    CreateRoomComponent
+    CreateRoomComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

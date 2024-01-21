@@ -1,0 +1,49 @@
+{
+  "websiteUser": [
+    {
+      "id": "085c",
+      "firstName": "Mehedi",
+      "lastName": "Hasan",
+      "gender": "Male",
+      "phoneNumber": "01925111043",
+      "email": "mh.ju1803@gmail.com",
+      "password": "123",
+      "role": "websiteVisitor"
+    },
+    {
+      "id": "c2af",
+      "firstName": "Shakib",
+      "lastName": "Al Hasan",
+      "gender": "Male",
+      "phoneNumber": "0199999999",
+      "email": "s@gmail.com",
+      "password": "123",
+      "role": "websiteVisitor"
+    },
+    {
+      "id": "00c2",
+      "firstName": "Mashrafi",
+      "lastName": "Mortaza",
+      "gender": "Male",
+      "phoneNumber": "01978888888",
+      "email": "m@gmail.com",
+      "password": "123",
+      "role": "websiteVisitor"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "97f7",
+      "Room_Code": "CT04",
+      "Accommodations_Category": "CampingTents",
+      "RoomSize": "100",
+      "WifiAvailability": "Wifi-available",
+      "AC": "AC-not-available",
+      "Room_Amenities": "Room_Amenities-available",
+      "Sleeping_Bag": "Sleeping_Bag-available",
+      "Single_Bed": "Single_Bed-none",
+      "Double_Bed": "Double_Bed-none",
+      "GuestSize": "GuestSize-1"
+    }
+  ]
+}
