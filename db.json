@@ -43,7 +43,7 @@
       "Sleeping_Bag": "Sleeping_Bag-available",
       "Single_Bed": "Single_Bed-none",
       "Double_Bed": "Double_Bed-none",
-      "GuestSize": "GuestSize-1"
+      "GuestSize": "GuestSize-3"
     },
     {
       "id": "35c2",
@@ -57,6 +57,19 @@
       "Single_Bed": "Single_Bed-none",
       "Double_Bed": "Double_Bed-2",
       "GuestSize": "GuestSize-4"
+    },
+    {
+      "id": "bb55",
+      "Room_Code": "C01",
+      "Accommodations_Category": "Cottage",
+      "RoomSize": "1200",
+      "WifiAvailability": "Wifi-available",
+      "AC": "AC-available",
+      "Room_Amenities": "Room_Amenities-available",
+      "Sleeping_Bag": "Sleeping_Bag-not-available",
+      "Single_Bed": "Single_Bed-none",
+      "Double_Bed": "Double_Bed-3",
+      "GuestSize": "GuestSize-8"
     }
   ]
 }

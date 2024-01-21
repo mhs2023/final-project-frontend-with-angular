@@ -24,4 +24,8 @@ export class RestAPIService {
     return this.http.post(this.URL, user)
   }
 
+  getAll(){
+    return this.http.get(this.URL);
+  }
+
 }

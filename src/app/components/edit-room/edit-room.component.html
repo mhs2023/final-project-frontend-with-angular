@@ -1,1 +1,106 @@
-<p>edit-room works!</p>
+<div class="container">
+    <h1 style="text-align: center;" class="mt-3 mb-5">Editing Accommodation</h1>
+
+    <form class="row g-3" [formGroup]="createRoom" (submit)="onSub()">
+        <div class="col-md-12 mb-3">
+            <label for="inputRoom_Code" class="form-label">Room Code</label>
+            <input type="text" class="form-control" id="inputRoom_Code" formControlName="Room_Code">
+        </div>
+        <div class="col-md-12">
+            <label for="inputCategory" class="form-label">Accommodations Category</label>
+            <select id="inputCategory" class="form-select" formControlName="Accommodations_Category">
+                <option selected>Choose...</option>
+                <option value="CampingTents">Camping Tents</option>
+                <option value="DeluxeKing">Deluxe King</option>
+                <option value="BusinessSuit">Business Suit</option>
+                <option value="DeluxeTwin">Deluxe Twin</option>
+                <option value="FamilyConnectingSuit">Family Connecting Suit</option>
+                <option value="Cottage">Cottage</option>
+            </select>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label for="inputRoomSize" class="form-label">Room Size</label>
+            <input type="text" class="form-control" id="inputRoomSize" formControlName="RoomSize">
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputGuestSize" class="form-label">Guest Size</label>
+            <select id="inputGuestSize" class="form-select" formControlName="GuestSize">
+                <option selected>Choose...</option>
+                <option value="GuestSize-1">1</option>
+                <option value="GuestSize-2">2</option>
+                <option value="GuestSize-3">3</option>
+                <option value="GuestSize-4">4</option>
+                <option value="GuestSize-5">5</option>
+                <option value="GuestSize-6">6</option>
+                <option value="GuestSize-7">7</option>
+                <option value="GuestSize-8">8</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputWifi" class="form-label">Wifi Availability</label>
+            <select id="inputWifi" class="form-select" formControlName="WifiAvailability">
+                <option selected>Choose...</option>
+                <option value="Wifi-available">Yes</option>
+                <option value="Wifi-not-available">No</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputAC" class="form-label">Air Conditioning Availability</label>
+            <select id="inputAC" class="form-select" formControlName="AC">
+                <option selected>Choose...</option>
+                <option value="AC-available">Yes</option>
+                <option value="AC-not-available">No</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputRoom_Amenities" class="form-label">Room Amenities Availability</label>
+            <select id="inputRoom_Amenities" class="form-select" formControlName="Room_Amenities">
+                <option selected>Choose...</option>
+                <option value="Room_Amenities-available">Yes</option>
+                <option value="Room_Amenities-not-available">No</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputSleeping_Bag" class="form-label">Sleeping Bag Availability</label>
+            <select id="inputSleeping_Bag" class="form-select" formControlName="Sleeping_Bag">
+                <option selected>Choose...</option>
+                <option value="Sleeping_Bag-available">Yes</option>
+                <option value="Sleeping_Bag-not-available">No</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputSingle_Bed" class="form-label">Number of Single Bed</label>
+            <select id="inputSingle_Bed" class="form-select" formControlName="Single_Bed">
+                <option selected>Choose...</option>
+                <option value="Single_Bed-none">None</option>
+                <option value="Single_Bed-1">1</option>
+                <option value="Single_Bed-2">2</option>
+                <option value="Single_Bed-3">3</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputDouble_Bed" class="form-label">Number of Single Bed</label>
+            <select id="inputDouble_Bed" class="form-select" formControlName="Double_Bed">
+                <option selected>Choose...</option>
+                <option value="Double_Bed-none">None</option>
+                <option value="Double_Bed-1">1</option>
+                <option value="Double_Bed-2">2</option>
+                <option value="Double_Bed-3">3</option>
+            </select>
+        </div>
+
+        <div class="col-12" style="text-align: right;margin-top: 50px;margin-bottom: 50px;">
+            <button type="submit" class="btn btn-primary">Update Room</button>
+        </div>
+
+
+    </form>
+</div>

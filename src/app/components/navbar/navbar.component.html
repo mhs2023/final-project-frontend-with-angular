@@ -1,6 +1,6 @@
 <div class="container">
     <nav class="navbar navbar-light bg-body-tertiary navbar-expand-lg btn:hover">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand">
             <img src="assets/logo1.png" height="130px" width="150px" alt="Shuvolong Royal Resort Logo" loading="lazy" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -10,22 +10,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-weight: 700;">
                 <li class="nav-item">
-                    <a class="nav-link btn-glow" aria-current="page" href="/home" style="color: #200E3A;">Home</a>
+                    <a class="nav-link btn-glow" aria-current="page" [routerLink]="['/home']" style="color: #200E3A;">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn-glow" href="#" style="color: #200E3A;">About Us</a>
+                    <a class="nav-link btn-glow"  style="color: #200E3A;">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn-glow" href="/room" style="color: #200E3A;">Rooms & Cottage</a>
+                    <a class="nav-link btn-glow" [routerLink]="['/room']" style="color: #200E3A;">Rooms & Cottage</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn-glow" href="#" style="color: #200E3A;">Contact Us</a>
+                    <a class="nav-link btn-glow"  style="color: #200E3A;">Contact Us</a>
                 </li>
             </ul>
 
             <!-- Log in -->
             <i class="fas fa-sign-in" style="margin-right: 2px;" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" title="Sign in"></i>
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" title="Sign in" *ngIf="somossaki !== 'true'"></i>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
@@ -33,15 +33,17 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <form style="text-align: center;">
+                    <form style="text-align: center;" [formGroup]="loginForm" (submit)="login()">
                         <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
                         <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                                formControlName="email">
                             <label for="floatingInput">Email address</label>
                         </div>
                         <div class="form-floating">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                formControlName="password">
                             <label for="floatingPassword">Password</label>
                         </div>
 

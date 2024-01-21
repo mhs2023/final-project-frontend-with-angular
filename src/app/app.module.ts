@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RoomListComponent } from './components/room-list/room-list.component';
 import { EditRoomComponent } from './components/edit-room/edit-room.component';
+import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EditRoomComponent } from './components/edit-room/edit-room.component';
     CreateRoomComponent,
     SignUpComponent,
     RoomListComponent,
-    EditRoomComponent
+    EditRoomComponent,
+    SideNavbarComponent
   ],
   imports: [
     BrowserModule,

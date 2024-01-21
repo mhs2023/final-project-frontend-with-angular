@@ -33,4 +33,12 @@ export class RoomAPIService {
   deleteById(id: any) {
     return this.http.delete(this.URL+ "/" + id);
   }
+
+  updateData(room: rooms) {
+    return this.http.put(this.URL+"/" + room.id, room);
+  }
+
+  getById(id: any) {
+    return this.http.get(this.URL+ "/" + id)
+  }
 }
