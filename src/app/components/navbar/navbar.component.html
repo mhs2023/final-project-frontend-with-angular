@@ -8,7 +8,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-weight: 700;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-weight: 700;" *ngIf="isAdmin !== 'admin'">
                 <li class="nav-item">
                     <a class="nav-link btn-glow" aria-current="page" [routerLink]="['/home']"
                         style="color: #200E3A;">Home</a>
@@ -23,30 +23,28 @@
                     <a class="nav-link btn-glow" style="color: #200E3A;">Contact Us</a>
                 </li>
             </ul>
-            <ul class="navbar-nav nav justify-content-center me-auto mb-2 mb-lg-0" style="font-weight: 700;"
+            <ul class="navbar-nav justify-content-center me-auto mb-2 mb-lg-0" style="font-weight: 700;"
                 *ngIf="isAdmin === 'admin'">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Link
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" style="color: #200E3A;">
+                        Room Management
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/createroom']">Create Room</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/roomList']">Room List</a></li>
                     </ul>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-glow" style="color: #200E3A;">About Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-glow" [routerLink]="['/room']" style="color: #200E3A;">Rooms & Cottage</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-glow" style="color: #200E3A;">Contact Us</a>
-                </li>
-            </ul>
 
+                <li class="nav-item">
+                    <a class="nav-link btn-glow" style="color: #200E3A;" [routerLink]="['/userList']">Website User
+                        List</a>
+                </li>
+          
+            </ul>
+            <div class="text-center pt-2" style="margin-left: 720px;" *ngIf="somossaki == 'true'">
+                <button class="btn btn-primary" type="button" (click)="logOut()">Log Out</button>
+            </div>
             <!-- Log in -->
             <i class="fas fa-sign-in" style="margin-right: 2px;" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" title="Sign in"

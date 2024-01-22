@@ -13,6 +13,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RoomListComponent } from './components/room-list/room-list.component';
 import { EditRoomComponent } from './components/edit-room/edit-room.component';
+import { UserListComponent } from './components/user-list/user-list.component';
+import { EditUserComponent } from './components/edit-user/edit-user.component';
 
 
 
@@ -27,6 +29,8 @@ import { EditRoomComponent } from './components/edit-room/edit-room.component';
     SignUpComponent,
     RoomListComponent,
     EditRoomComponent,
+    UserListComponent,
+    EditUserComponent,
 
 
   ],

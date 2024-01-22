@@ -17,7 +17,6 @@ export class NavbarComponent implements OnInit{
   
   ngOnInit(): void {
     this.isLogin();
-    
   }
 
   loginForm: FormGroup = new FormGroup({
@@ -28,6 +27,8 @@ export class NavbarComponent implements OnInit{
   isLogin() {
 
     let login = localStorage.getItem("isLogin");
+    this.somossaki = localStorage.getItem("isLogin");
+    this.isAdmin = localStorage.getItem("role");
     if (login !== "true") {
       this.router.navigateByUrl('/home');
     } 
@@ -48,11 +49,14 @@ export class NavbarComponent implements OnInit{
           localStorage.setItem("email", this.authList[index].email);
           localStorage.setItem("role", this.authList[index].role);
           flag = true;
+          this.authService.changeMessage(this.authList[index]);
         }
       }
 
 
       if (flag == true) {
+        this.somossaki = localStorage.getItem("isLogin");
+        this.isAdmin = localStorage.getItem("role");
         this.router.navigateByUrl('/createroom');
       } else {
         alert("Incorrect UserName Or Password!");
@@ -60,5 +64,18 @@ export class NavbarComponent implements OnInit{
 
 
     });
+  }
+
+
+  logStatus='';
+
+
+  logOut() {
+
+    localStorage.removeItem("email");
+    localStorage.removeItem("role");
+    localStorage.removeItem("isLogin");
+    this.router.navigateByUrl('/home');
+    this.isLogin();
   }
 }

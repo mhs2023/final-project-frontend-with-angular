@@ -29,16 +29,6 @@
       "email": "m@gmail.com",
       "password": "123",
       "role": "websiteVisitor"
-    },
-    {
-      "id": "efc0",
-      "firstName": "Ayan",
-      "lastName": "Hossain",
-      "gender": "Male",
-      "phoneNumber": "0197700001",
-      "email": "ladykiller@gmail.com",
-      "password": "1234",
-      "role": "websiteVisitor"
     }
   ],
   "rooms": [
@@ -80,6 +70,45 @@
       "Single_Bed": "Single_Bed-none",
       "Double_Bed": "Double_Bed-3",
       "GuestSize": "GuestSize-8"
+    },
+    {
+      "id": "9925",
+      "Room_Code": "C02",
+      "Accommodations_Category": "Cottage",
+      "RoomSize": "1200",
+      "WifiAvailability": "Wifi-available",
+      "AC": "AC-available",
+      "Room_Amenities": "Room_Amenities-available",
+      "Sleeping_Bag": "Sleeping_Bag-not-available",
+      "Single_Bed": "Single_Bed-3",
+      "Double_Bed": "Double_Bed-none",
+      "GuestSize": "GuestSize-8"
+    },
+    {
+      "id": "96e0",
+      "Room_Code": "DK01",
+      "Accommodations_Category": "DeluxeKing",
+      "RoomSize": "568",
+      "WifiAvailability": "Wifi-available",
+      "AC": "AC-available",
+      "Room_Amenities": "Room_Amenities-available",
+      "Sleeping_Bag": "Sleeping_Bag-not-available",
+      "Single_Bed": "Single_Bed-3",
+      "Double_Bed": "Double_Bed-none",
+      "GuestSize": "GuestSize-3"
+    },
+    {
+      "id": "949f",
+      "Room_Code": "CT03",
+      "Accommodations_Category": "CampingTents",
+      "RoomSize": "100",
+      "WifiAvailability": "Wifi-available",
+      "AC": "AC-not-available",
+      "Room_Amenities": "Room_Amenities-not-available",
+      "Sleeping_Bag": "Sleeping_Bag-not-available",
+      "Single_Bed": "Single_Bed-1",
+      "Double_Bed": "Double_Bed-2",
+      "GuestSize": "GuestSize-2"
     }
   ]
 }

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { RestAPIService } from 'src/app/services/rest-api.service';
 import { RoomAPIService } from 'src/app/services/room-api.service';
 
 @Component({
@@ -8,9 +9,12 @@ import { RoomAPIService } from 'src/app/services/room-api.service';
   templateUrl: './create-room.component.html',
   styleUrls: ['./create-room.component.scss']
 })
-export class CreateRoomComponent {
+export class CreateRoomComponent implements OnInit {
 
-  constructor(public APIService: RoomAPIService, private router: Router) { }
+  constructor(public APIService: RoomAPIService, private router: Router, public restApiService: RestAPIService) { }
+  ngOnInit(): void {
+    this.restApiService.isLogin;
+  }
 
   createRoom: FormGroup = new FormGroup({
     Room_Code: new FormControl(''),

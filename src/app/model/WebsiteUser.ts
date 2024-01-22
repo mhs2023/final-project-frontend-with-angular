@@ -6,4 +6,5 @@ export interface WebsiteUser {
     phoneNumber: string;
     email: string;
     password: string;
+    role: String;
 }
