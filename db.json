@@ -8,7 +8,7 @@
       "phoneNumber": "01925111043",
       "email": "mh.ju1803@gmail.com",
       "password": "123",
-      "role": "websiteVisitor"
+      "role": "admin"
     },
     {
       "id": "c2af",
@@ -28,6 +28,16 @@
       "phoneNumber": "01978888888",
       "email": "m@gmail.com",
       "password": "123",
+      "role": "websiteVisitor"
+    },
+    {
+      "id": "efc0",
+      "firstName": "Ayan",
+      "lastName": "Hossain",
+      "gender": "Male",
+      "phoneNumber": "0197700001",
+      "email": "ladykiller@gmail.com",
+      "password": "1234",
       "role": "websiteVisitor"
     }
   ],

@@ -13,6 +13,7 @@ export class NavbarComponent implements OnInit{
   constructor(public authService: RestAPIService, private router: Router) { }
 
   somossaki = localStorage.getItem("isLogin");
+  isAdmin = localStorage.getItem("role");
   
   ngOnInit(): void {
     this.isLogin();
@@ -52,7 +53,6 @@ export class NavbarComponent implements OnInit{
 
 
       if (flag == true) {
-
         this.router.navigateByUrl('/createroom');
       } else {
         alert("Incorrect UserName Or Password!");

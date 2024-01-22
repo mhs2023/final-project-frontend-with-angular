@@ -6,7 +6,7 @@ import { CreateRoomComponent } from './components/create-room/create-room.compon
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { RoomListComponent } from './components/room-list/room-list.component';
 import { EditRoomComponent } from './components/edit-room/edit-room.component';
-import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -16,6 +16,7 @@ const routes: Routes = [
   {path: 'signup', component: SignUpComponent},
   {path: 'roomList', component: RoomListComponent},
   {path: 'edit/:id', component: EditRoomComponent},
+  
 ];
 
 @NgModule({
